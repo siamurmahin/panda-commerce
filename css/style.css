@@ -5,3 +5,11 @@
     background-color: white !important;
     border: 0 !important;
 }
+.categories img{
+    width: 100px;
+
+}
+.panda-slide .carousel-item{
+    background-color: #FFEAE9;
+    border-radius: 10px;
+}
