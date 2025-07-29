@@ -7,12 +7,16 @@
     <!-- CSS LINK-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
 
 </head>
 <body>
-<header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+<div id="preloader">
+    <div class="spinner"></div>
+</div>
+<header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
+            <div class="container">
               <a class="navbar-brand" href="#">Restaurant</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,9 +44,44 @@
           </nav>
 </header>
 <main class="container">
-    <section class="mt-5">
+    <section class="mt-5 text-center">
         <h1>About Us</h1>
-        <p>We are a family-owned restaurant that has been serving delicious food for over 20 years. We are passionate about using fresh, local ingredients to create memorable meals for our customers.</p>
+        <p class="lead">We are a family-owned restaurant that has been serving delicious food for over 20 years. We are passionate about using fresh, local ingredients to create memorable meals for our customers.</p>
+    </section>
+
+    <section class="parallax-section mt-5" style="background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center text-white">
+                    <h2>Our Story</h2>
+                    <p class="lead">Our restaurant was founded in 2003 by John and Jane Smith, a husband and wife team with a shared passion for cooking. They started with a small, 20-seat diner and have since grown into one of the most popular restaurants in the city. We are proud to be a family-owned and operated business, and we are committed to providing our customers with the best possible dining experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <h2 class="text-center">Meet the Chefs</h2>
+        <div class="row mt-5">
+            <div class="col-md-4 text-center">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="img-fluid rounded-circle w-75" alt="Chef 1">
+                <h4 class="mt-3">John Smith</h4>
+                <p class="text-muted">Head Chef</p>
+                <p>John is the co-founder of the restaurant and has over 25 years of experience in the culinary arts. He is passionate about creating new and exciting dishes that will tantalize your taste buds.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://images.unsplash.com/photo-1542282432-c3407b3b1378?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="img-fluid rounded-circle w-75" alt="Chef 2">
+                <h4 class="mt-3">Jane Smith</h4>
+                <p class="text-muted">Pastry Chef</p>
+                <p>Jane is the other co-founder of the restaurant and is a world-renowned pastry chef. She is known for her delicious and beautiful desserts that are the perfect way to end any meal.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://images.unsplash.com/photo-1622282225462-a7d5d2524883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="img-fluid rounded-circle w-75" alt="Chef 3">
+                <h4 class="mt-3">Peter Jones</h4>
+                <p class="text-muted">Sous Chef</p>
+                <p>Peter has been with the restaurant since it opened and is an expert in all aspects of the kitchen. He is a master of the grill and is known for his perfectly cooked steaks and seafood.</p>
+            </div>
+        </div>
     </section>
 </main>
 <footer  class="text-center mt-5">
@@ -50,5 +89,6 @@
 </footer>
     <!-- JS For Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
