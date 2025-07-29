@@ -7,18 +7,22 @@
     <!-- CSS LINK-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
     
 </head>
 <body>
-<header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+<div id="preloader">
+    <div class="spinner"></div>
+</div>
+<header class="container-fluid" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center; color: white;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-nav">
+            <div class="container">
               <a class="navbar-brand" href="#">Restaurant</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
@@ -39,25 +43,68 @@
             </div>
           </nav>
 
-    <section>
-        <div id="carouselExampleSlidesOnly" class="carousel slide panda-slide mt-5" data-bs-ride="carousel">
+    <section class="container">
+        <div id="carouselExampleIndicators" class="carousel slide panda-slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
             <div class="carousel-inner">
-              <div class="carousel-item active p-5">
+              <div class="carousel-item active p-5" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'); background-size: cover; background-position: center; border-radius: 10px;">
                   <div class="row">
                       <div class="col-md-7 d-flex align-items-center">
                         <div>
-                          <h1>Welcome to our Restaurant</h1>
-                        <p>Your new favorite destination for delicious food.</p>
-                        <button class="btn btn-warning">Book a Table</button>
+                          <h1 class="display-4">Experience the Taste of Italy</h1>
+                        <p class="lead">Authentic Italian cuisine made with the freshest ingredients.</p>
+                        <a href="menu.html" class="btn btn-warning btn-lg">View Menu</a>
                         </div>
                       </div>
                       <div class="col-md-5">
-                        <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+
                       </div>
                   </div>
                 
               </div>
+              <div class="carousel-item p-5" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center; border-radius: 10px;">
+                <div class="row">
+                    <div class="col-md-7 d-flex align-items-center">
+                      <div>
+                        <h1 class="display-4">The Perfect Place for a Date Night</h1>
+                      <p class="lead">Enjoy a romantic dinner in a cozy and intimate setting.</p>
+                      <a href="booking.html" class="btn btn-warning btn-lg">Book a Table</a>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item p-5" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center; border-radius: 10px;">
+                <div class="row">
+                    <div class="col-md-7 d-flex align-items-center">
+                      <div>
+                        <h1 class="display-4">Celebrate Your Special Occasions</h1>
+                      <p class="lead">Host your next event with us and create unforgettable memories.</p>
+                      <a href="contact.html" class="btn btn-warning btn-lg">Contact Us</a>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+
+                    </div>
+                </div>
+
+            </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
           </div>
     </section>
 </header>
@@ -66,11 +113,11 @@
       <h3>Featured Menu</h3>
           <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
             <div class="col">
-              <div class="card panda-card h-100 shadow p-3">
-                <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+              <div class="card panda-card h-100 shadow p-3 menu-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=781&q=80" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Dish 1</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+                  <h5 class="card-title">Pizza</h5>
+                  <p class="card-text">A classic pizza with your choice of toppings.</p>
                   <h5>$12.50</h5>
                 </div>
                 <div class="card-footer panda-card-footer ">
@@ -81,11 +128,11 @@
               </div>
             </div>
             <div class="col">
-              <div class="card panda-card h-100 shadow p-3">
-                <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+              <div class="card panda-card h-100 shadow p-3 menu-card">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Dish 2</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">Salad</h5>
+                  <p class="card-text">A fresh and healthy salad with a variety of greens and vegetables.</p>
                   <h5>$15.00</h5>
                 </div>
                 <div class="card-footer  panda-card-footer ">
@@ -96,11 +143,11 @@
               </div>
             </div>
             <div class="col">
-              <div class="card panda-card h-100 shadow p-3">
-                <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+              <div class="card panda-card h-100 shadow p-3 menu-card">
+                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Dish 3</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">Pancakes</h5>
+                  <p class="card-text">Fluffy pancakes with your choice of toppings.</p>
                   <h5>$18.25</h5>
                 </div>
                 <div class="card-footer  panda-card-footer ">
@@ -114,28 +161,31 @@
         </section>
 
         <section class="mt-5">
-          <h3>Testimonials</h3>
+          <h3 class="text-center">Testimonials</h3>
               <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
                 <div class="col">
-                  <div class="card panda-card h-100 shadow p-3">
+                  <div class="card panda-card h-100 shadow p-3 text-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="card-img-top rounded-circle w-50 mx-auto" alt="...">
                     <div class="card-body">
-                      <p class="card-text">"The food was amazing! I will definitely be back."</p>
+                      <p class="card-text fst-italic">"The food was amazing! I will definitely be back."</p>
                       <h5 class="card-title">- John Doe</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card panda-card h-100 shadow p-3">
+                  <div class="card panda-card h-100 shadow p-3 text-center">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="card-img-top rounded-circle w-50 mx-auto" alt="...">
                     <div class="card-body">
-                      <p class="card-text">"I love the atmosphere of this place. It's so cozy and inviting."</p>
+                      <p class="card-text fst-italic">"I love the atmosphere of this place. It's so cozy and inviting."</p>
                       <h5 class="card-title">- Jane Doe</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card panda-card h-100 shadow p-3">
+                  <div class="card panda-card h-100 shadow p-3 text-center">
+                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80" class="card-img-top rounded-circle w-50 mx-auto" alt="...">
                     <div class="card-body">
-                      <p class="card-text">"The service was excellent. The staff was so friendly and attentive."</p>
+                      <p class="card-text fst-italic">"The service was excellent. The staff was so friendly and attentive."</p>
                       <h5 class="card-title">- Peter Jones</h5>
                     </div>
                   </div>

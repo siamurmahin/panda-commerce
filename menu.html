@@ -7,12 +7,16 @@
     <!-- CSS LINK-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
 
 </head>
 <body>
-<header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+<div id="preloader">
+    <div class="spinner"></div>
+</div>
+<header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
+            <div class="container">
               <a class="navbar-brand" href="#">Restaurant</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,24 +44,77 @@
           </nav>
 </header>
 <main class="container">
-    <section class="mt-5">
+    <section class="mt-5 text-center">
         <h1>Our Menu</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Appetizers</h3>
-                <ul>
-                    <li>Garlic Bread - $5.00</li>
-                    <li>Bruschetta - $7.50</li>
-                    <li>Stuffed Mushrooms - $8.00</li>
-                </ul>
+        <div class="btn-group mt-3" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-warning active" data-filter="all">All</button>
+            <button type="button" class="btn btn-outline-warning" data-filter="appetizers">Appetizers</button>
+            <button type="button" class="btn btn-outline-warning" data-filter="main-courses">Main Courses</button>
+            <button type="button" class="btn btn-outline-warning" data-filter="desserts">Desserts</button>
+          </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col menu-item appetizers">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1598214886806-2c6b2FE8f707?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=785&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Garlic Bread</h5>
+                        <p class="card-text">Toasted bread with garlic, butter, and herbs.</p>
+                        <p class="card-text"><strong>$5.00</strong></p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h3>Main Courses</h3>
-                <ul>
-                    <li>Spaghetti and Meatballs - $15.00</li>
-                    <li>Chicken Parmesan - $18.00</li>
-                    <li>Fish and Chips - $16.50</li>
-                </ul>
+            <div class="col menu-item appetizers">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1505253716362-af78f3d493a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bruschetta</h5>
+                        <p class="card-text">Grilled bread with tomatoes, garlic, and olive oil.</p>
+                        <p class="card-text"><strong>$7.50</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col menu-item main-courses">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1598866594243-a4a53515433e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Spaghetti and Meatballs</h5>
+                        <p class="card-text">A classic dish of spaghetti with meatballs in tomato sauce.</p>
+                        <p class="card-text"><strong>$15.00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col menu-item main-courses">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1633933358116-724c755f2e2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Parmesan</h5>
+                        <p class="card-text">Breaded chicken with marinara sauce and mozzarella cheese.</p>
+                        <p class="card-text"><strong>$18.00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col menu-item desserts">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiramisu</h5>
+                        <p class="card-text">A classic Italian dessert made with coffee, mascarpone cheese, and ladyfingers.</p>
+                        <p class="card-text"><strong>$8.00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col menu-item desserts">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheesecake</h5>
+                        <p class="card-text">A rich and creamy cheesecake with a graham cracker crust.</p>
+                        <p class="card-text"><strong>$7.00</strong></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -67,5 +124,6 @@
 </footer>
     <!-- JS For Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
